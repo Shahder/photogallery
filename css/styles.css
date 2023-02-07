@@ -1,0 +1,321 @@
+/** CSS RESET **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** CSS RESET END **/
+
+html {
+    background-color: #000000;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 auto;
+    /**width: width;**/
+    width: 485px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #007d7b;
+}
+
+nav {
+    background-color: #000000;
+    padding: 15px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    padding: 10px;
+    right: 30px;
+}
+
+#backtop {
+    position: fixed;
+    z-index: 1;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+    top: 850px;
+    right: -10px;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: #007d7b;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+p {
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+img {
+    width: 90%;
+}
+
+figcaption {
+    font-size: 1em;
+    text-align: center;
+}
+
+#chilefig {
+    position: relative;
+    color: #ffffff;
+    bottom: 25px;
+}
+
+#guatemalafig {
+    position: relative;
+    color: #ffffff;
+    bottom: 215px;
+}
+
+#hawaiifig {
+    position: relative;
+    color: #ffffff;
+    bottom: 25px;
+}
+
+#iranfig {
+    position: relative;
+    color: #000000;
+    bottom: 495px;
+}
+
+#irelandfig {
+    position: relative;
+    color: #000000;
+    bottom: 495px;
+}
+
+#italyfig {
+    position: relative;
+    color: #000000;
+    bottom: 25px;
+}
+
+#moabfig {
+    position: relative;
+    color: #ffffff;
+    bottom: 25px;
+}
+
+#rockyfig {
+    position: relative;
+    color: #000000;
+    bottom: 215px;
+}
+
+#switzfig {
+    position: relative;
+    color: #000000;
+    bottom: 215px;
+}
+
+#ukfig {
+    position: relative;
+    color: #000000;
+    bottom: 215px;
+}
+
+#usafig {
+    position: relative;
+    color: #000000;
+    bottom: 215px;
+}
+
+#wyomingfig {
+    position: relative;
+    color: #ffffff;
+    bottom: 215px;
+}
+
+input {
+    font-size: 1em;
+}
+
+#contact {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#contact p {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+label {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+input {
+    height: 25px;
+}
+
+input::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#submitbtn {
+    background-color: #007d7b;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    width: 185px;
+    height: 32px;
+    border-radius: 13px;
+    top: 20px;
+    left: 20%;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+small {
+    font-size: 1em;
+}
+
+@media screen and (min-width:880px) {
+
+    body {
+        width: 880px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        padding-left: 175px;
+    }
+
+    #backtop {
+        right: 10px;
+    }
+
+    #imagewrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    #submitbtn {
+        width: 350px;
+        left: 20%;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+    
+    body {
+        width: 1300px;
+    }
+    
+    nav {
+        justify-content: right;
+        padding-left: 520px;
+    }
+
+    #backtop {
+        right: 70px;
+    }
+
+    #imagewrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #submitbtn {
+        width: 500px;
+    }
+}
